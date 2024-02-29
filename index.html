@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management Software</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid mx-4 mt-3">
+    <div>
+      <h1 class="fw-bold">Employee Management Software</h1>
+    </div>
+    <div class="my-4">
+      <button id="addemployee" class="btn btn-primary me-1 px-3 fw-medium">
+        Add Employee
+      </button>
+      <button class="btn btn-outline-secondary px-3 fw-medium">Logout</button>
+    </div>
+    <div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>First</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="row_entires"></tbody>
+      </table>
+    </div>
+
+    <div id="form" class="w-100">
+      <form id="formTable" class="row">
+        <div class="col-4 bg-light px-4 py-3 opacity-100">
+          <h1 id="formHeading">Add Employee</h1>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" name="" id="firstName" />
+          </div>
+          <div class="form-group">
+            <label for="firstname">Last Name</label>
+            <input type="text" class="form-control" name="" id="lastName" />
+          </div>
+          <div class="form-group">
+            <label for="firstname">Email</label>
+            <input type="text" class="form-control" name="" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="firstname">Salary($)</label>
+            <input type="text" class="form-control" name="" id="salary" />
+          </div>
+          <div class="form-group">
+            <label for="firstname">Date</label>
+            <input type="date" class="form-control" name="" id="date" />
+          </div>
+          <div class="mt-2">
+            <button id="addbtnForm" type="button" class="btn btn-primary">
+              Add
+            </button>
+            <button id="savebtnForm" type="button" class="btn btn-primary">
+              Save
+            </button>
+            <button
+              id="cancelbtn"
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="src/main.ts" type="module"></script>
+    <!-- <script src="script2.js" type="module"></script> -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html> -->

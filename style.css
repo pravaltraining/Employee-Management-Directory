@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+#form {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  display: none;
+  box-shadow: 2px;
+}
+#savebtnForm {
+  display: none;
+}
